@@ -1,0 +1,202 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    /* Variáveis em css, tem o nome com inicio '--' sempre */
+    --cor1: #c5ebd6;
+    --cor2: #83E1AD;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #065d1e;
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'bebas neue', normal, sans-serif;
+    --fonte3: 'idroid', normal, sans-serif;
+}
+
+/* Ainda precisa criar o font face pra poder por na variável */
+@font-face {
+    font-family: idroid;
+    src: url(/HTML-e-CSS/HTML\ e\ CSS/Desafios/Modulo2/pacote-projeto-d010/fontes/idroid/IDroid.otf);
+    font-weight: normal;
+}
+
+* {
+    line-height: 1.5em;
+    font-family: var(--fonte1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor3);
+}
+
+header {
+
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    padding: 16px 60px;
+}
+
+header>h1 {
+    font-size: 2.5em;
+}
+
+header>p {
+    font-size: 1.2em;
+}
+
+header>h1,
+header>p {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px #0000008c;
+    font-family: var(--fonte2);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 0.5em 1em;
+}
+
+nav>a {
+    padding: 10px 8px;
+    margin: 10px 0px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+nav>a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: var(--cor4);
+    padding: 11.5px 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+h3 {
+    background-image: linear-gradient(to right, var(--cor1), white);
+}
+
+h2,
+h3 {
+    font-family: var(--fonte3);
+    color: var(--cor5);
+    padding: 0 10px;
+
+}
+
+main {
+    background-color: white;
+    justify-items: center;
+    margin: auto;
+    border-radius: 0 0 20px 20px;
+    padding: 0.5em 1em;
+    max-width: 1000px;
+    min-width: 500px;
+}
+
+p {
+    padding: 0 1em;
+    line-height: 2em;
+}
+
+
+article>h2 {
+    margin-top: 1px;
+    width: 100%;
+
+}
+
+aside {
+    background-color: var(--cor1);
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+aside>p {
+    text-indent: 2em;
+    padding: 0px 10px;
+}
+
+h4 {
+    background-color: var(--cor4);
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+    color: white;
+}
+
+.container-lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Quantidade de colunas */
+.lista {
+    columns: 2;
+}
+
+strong {
+    color: var(--cor5);
+}
+
+.links {
+    color: var(--cor5);
+    text-decoration: none;
+    background-color: var(--cor2);
+    padding: 3px 5px;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1px;
+    margin-top: 10px;
+    background-color: var(--cor6);
+}
+
+/* > para todos p aninhados no footer
+   p para p's dentro apenas de footer e não aninhados
+*/
+footer>p,
+footer>p>strong {
+    color: white;
+}
+
+img {
+    margin: auto;
+    display: block;
+}
+
+.imagem,
+.video {
+    text-align: center;
+}
+
+.fundo-video {
+    background-color: var(--cor6);
+    padding: 20px 1em;
+    margin: 0 -1em;
+    position: relative;
+    padding-bottom: 56%;
+}
+
+iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+a {
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+}
